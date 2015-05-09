@@ -25,7 +25,7 @@ The Data Set Description can be viewed at:
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (`WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
+The sensor signals (accelerometer <a href="#twelve">[12]</a> and gyroscope <a href="#thirteen">[13]</a>) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
     
     
 ## Attribute Information:
@@ -68,15 +68,16 @@ The following files are available for the train and test data. Their description
 
 ## Feature Selection    
    
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.     
+The features selected for this database come from the accelerometer <a href="#twelve">[12]</a> and gyroscope <a href="#thirteen">[13]</a> 3-axial raw signals `tAcc-XYZ` and `tGyro-XYZ`. These time domain signals (prefix `t` to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (`tBodyAcc-XYZ` and `tGravityAcc-XYZ`) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.     
      
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).      
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (`tBodyAccJerk-XYZ` and `tBodyGyroJerk-XYZ`). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (`tBodyAccMag`, `tGravityAccMag`, `tBodyAccJerkMag`, `tBodyGyroMag`, `tBodyGyroJerkMag`).      
      
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).      
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing `fBodyAcc-XYZ`, `fBodyAccJerk-XYZ`, `fBodyGyro-XYZ`, `fBodyAccJerkMag`, `fBodyGyroMag`, `fBodyGyroJerkMag`. (Note the `f` to indicate frequency domain signals).      
      
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.     
 
+```
 tBodyAcc-XYZ    
 tGravityAcc-XYZ    
 tBodyAccJerk-XYZ    
@@ -94,7 +95,8 @@ fBodyAccMag
 fBodyAccJerkMag    
 fBodyGyroMag    
 fBodyGyroJerkMag     
-    
+```
+
 The set of variables that were estimated from these signals are:     
 
 **mean():** Mean value    
@@ -115,14 +117,16 @@ The set of variables that were estimated from these signals are:
 **bandsEnergy():** Energy of a frequency interval within the 64 bins of the FFT of each window.    
 **angle():** Angle between to vectors.    
     
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:    
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the `angle()` variable:    
 
+```
 gravityMean    
 tBodyAccMean    
 tBodyAccJerkMean    
 tBodyGyroMean     
 tBodyGyroJerkMean     
-    
+```
+
 ## Notes:    
 
 - Features are normalized and bounded within [-1,1].
@@ -132,7 +136,7 @@ tBodyGyroJerkMean
 
 ## Data Set Description   
 
-**Abstract:** Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The database was tranformed by running the run_analysis.R Script. The Mean function was applied to each variable by SubjectId and Activity to create the tidy data set described below.     
+**Abstract:** Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The database was tranformed by running the `run_analysis.R` Script. The `Mean` function was applied to each variable by `SubjectId` and `Activity` to create the tidy data set described below.     
 
 **Data Set Characteristics:** Multivariate, Time-Series  
 
@@ -142,10 +146,11 @@ tBodyGyroJerkMean
 
 ## The dataset includes the following file:    
      
-'avgByActSub.txt'     
+`avgByActSub.txt`       
 
 ## Feature Selection     
 
+```
  [1] SubjectId                                                               
  [2] Activity                                                                
  [3] TimeDomain.LinearAcceleration.Mean.X                                    
@@ -227,8 +232,9 @@ tBodyGyroJerkMean
 [79] FrequencyDomain.Body.AngularVelocity.Jerk.Magnitude.Mean                
 [80] FrequencyDomain.Body.AngularVelocity.Jerk.Magnitude.StandardDeviation   
 [81] FrequencyDomain.Body.AngularVelocity.Jerk.Magnitude.Mean.Frequency       
+```   
 
-**TimeDomain** is the analysis of mathematical functions, physical signals or time series of economic or environmental data, with respect to time. <a href="#two">[2]</a>      
+**TimeDomain** is the analysis of mathematical functions, physical signals or time series of economic or environmental data, with respect to time. <a href="#two">[2]</a>   
 **FrequencyDomain** refers to the analysis of mathematical functions or signals with respect to frequency, rather than time. <a href="#three">[3]</a>      
 **GravityAcceleration** is the acceleration on an object caused by force of gravity. <a href="#four">[4]</a>    
 **LinearAcceleration** is the rate at which the velocity of an object changes over time while moving in one direction. <a href="#five">[5]</a>     
@@ -242,13 +248,17 @@ tBodyGyroJerkMean
 # References     
 
  <a id="one">[1]<a/> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012    
- <a id="two">[2]<a/> [Time domain http://en.wikipedia.org/wiki/Time_domain](http://en.wikipedia.org/wiki/Time_domain)         
- <a id="three">[3]<a/> [Frequency domain http://en.wikipedia.org/wiki/Frequency_domain](http://en.wikipedia.org/wiki/Frequency_domain)        
- <a id="four">[4]<a/> [Gravitational acceleration http://en.wikipedia.org/wiki/Gravitational_acceleration](http://en.wikipedia.org/wiki/Gravitational_acceleration)   
- <a id="five">[5]<a/> [Acceleration http://en.wikipedia.org/wiki/Acceleration](http://en.wikipedia.org/wiki/Acceleration)     
- <a id="six">[6]<a/> [Angular velocity http://en.wikipedia.org/wiki/Angular_velocity](http://en.wikipedia.org/wiki/Angular_velocity)     
- <a id="seven">[7]<a/> [Jerk http://en.wikipedia.org/wiki/Jerk_(physics)](http://en.wikipedia.org/wiki/Jerk_(physics))    
- <a id="eight">[8]<a/> [Magnitude http://en.wikipedia.org/wiki/Magnitude_(mathematics)](http://en.wikipedia.org/wiki/Magnitude_(mathematics))     
- <a id="nine">[9]<a/> [Frequency http://en.wikipedia.org/wiki/Frequency](http://en.wikipedia.org/wiki/Frequency)     
-<a id="ten">[10]<a/> [Standard deviation http://en.wikipedia.org/wiki/Standard_deviation](http://en.wikipedia.org/wiki/Standard_deviation)     
-<a id="eleven">[11]<a/> [Average http://en.wikipedia.org/wiki/Average](http://en.wikipedia.org/wiki/Average)     
+ <a id="two">[2]<a/> [Time Domain](http://en.wikipedia.org/wiki/Time_domain)         
+ <a id="three">[3]<a/> [Frequency Domain](http://en.wikipedia.org/wiki/Frequency_domain)        
+ <a id="four">[4]<a/> [Gravitational Acceleration](http://en.wikipedia.org/wiki/Gravitational_acceleration)   
+ <a id="five">[5]<a/> [Acceleration](http://en.wikipedia.org/wiki/Acceleration)     
+ <a id="six">[6]<a/> [Angular Velocity](http://en.wikipedia.org/wiki/Angular_velocity)     
+ <a id="seven">[7]<a/> [Jerk](http://en.wikipedia.org/wiki/Jerk_(physics))    
+ <a id="eight">[8]<a/> [Magnitude](http://en.wikipedia.org/wiki/Magnitude_(mathematics))     
+ <a id="nine">[9]<a/> [Frequency](http://en.wikipedia.org/wiki/Frequency)     
+<a id="ten">[10]<a/> [Standard Deviation](http://en.wikipedia.org/wiki/Standard_deviation)     
+<a id="eleven">[11]<a/> [Average](http://en.wikipedia.org/wiki/Average)   
+<a id="twelve">[12]<a/> [Accelerometer](http://en.wikipedia.org/wiki/Accelerometer)
+<a id="thirteen">[13]<a/> [Gyroscope](http://en.wikipedia.org/wiki/Gyroscope)
+
+
