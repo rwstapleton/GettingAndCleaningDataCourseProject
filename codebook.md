@@ -5,7 +5,11 @@
 
 # The Raw Data 
 
-The raw data was obtained from the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html). The Human Activity Recognition Using Smartphones Data Set [1] the folder was downloaded from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and the Data Set Description can be viewed at [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)       
+The raw data was obtained from the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html).   
+The Human Activity Recognition Using Smartphones Data Set <a href="#one">[1]</a> the folder was downloaded from:  
+- [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)   
+The Data Set Description can be viewed at:   
+- [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)       
 
 ## Data Set Description     
 
@@ -19,7 +23,7 @@ The raw data was obtained from the [UC Irvine Machine Learning Repository](http:
     
 ## Study Design:
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (`WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
     
@@ -225,26 +229,26 @@ tBodyGyroJerkMean
 [81] FrequencyDomain.Body.AngularVelocity.Jerk.Magnitude.Mean.Frequency       
 
 **TimeDomain** is the analysis of mathematical functions, physical signals or time series of economic or environmental data, with respect to time. <a href="#two">[2]</a>      
-**FrequencyDomain** refers to the analysis of mathematical functions or signals with respect to frequency, rather than time.[3]      
-**GravityAcceleration** is the acceleration on an object caused by force of gravity.[4]    
-**LinearAcceleration** is the rate at which the velocity of an object changes over time while moving in one direction.[5]     
-**AngularVelocity** is defined as the rate of change of angular displacement and is a vector quantity which specifies the rotational speed of an object and the axis about which the object is rotating.[6]      
-**Jerk** is the rate of change of acceleration; that is, the derivative of acceleration with respect to time.[7]         
-**Magnitude** is the size of an object, a property by which the object can be compared as larger or smaller than other objects of the same kind.[8]     
-**Frequency** is the number of occurrences of a repeating event per unit time.[9]       
-**StandardDeviation** measures the amount of variation or dispersion from the average.[10]      
-**Mean** is an average that refers to the sum of a list of numbers divided by the size of the list, in other words the arithmetic mean.[11]     
+**FrequencyDomain** refers to the analysis of mathematical functions or signals with respect to frequency, rather than time. <a href="#three">[3]</a>      
+**GravityAcceleration** is the acceleration on an object caused by force of gravity. <a href="#four">[4]</a>    
+**LinearAcceleration** is the rate at which the velocity of an object changes over time while moving in one direction. <a href="#five">[5]</a>     
+**AngularVelocity** is defined as the rate of change of angular displacement and is a vector quantity which specifies the rotational speed of an object and the axis about which the object is rotating. <a href="#six">[6]</a>      
+**Jerk** is the rate of change of acceleration; that is, the derivative of acceleration with respect to time. <a href="#seven">[7]</a>         
+**Magnitude** is the size of an object, a property by which the object can be compared as larger or smaller than other objects of the same kind. <a href="#eight">[8]</a>     
+**Frequency** is the number of occurrences of a repeating event per unit time. <a href="#nine">[9]</a>       
+**StandardDeviation** measures the amount of variation or dispersion from the average. <a href="#ten">[10]</a>      
+**Mean** is an average that refers to the sum of a list of numbers divided by the size of the list, in other words the arithmetic mean. <a href="#eleven">[11]</a>     
 
 # References     
 
- [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012    
- <a id="one"><a/>[2][Time domain http://en.wikipedia.org/wiki/Time_domain](http://en.wikipedia.org/wiki/Time_domain)         
- [3][Frequency domain http://en.wikipedia.org/wiki/Frequency_domain](http://en.wikipedia.org/wiki/Frequency_domain)        
- [4][Gravitational acceleration http://en.wikipedia.org/wiki/Gravitational_acceleration](http://en.wikipedia.org/wiki/Gravitational_acceleration)   
- [5][Acceleration http://en.wikipedia.org/wiki/Acceleration](http://en.wikipedia.org/wiki/Acceleration)     
- [6][Angular velocity http://en.wikipedia.org/wiki/Angular_velocity](http://en.wikipedia.org/wiki/Angular_velocity)     
- [7][Jerk http://en.wikipedia.org/wiki/Jerk_(physics)](http://en.wikipedia.org/wiki/Jerk_(physics))    
- [8][Magnitude http://en.wikipedia.org/wiki/Magnitude_(mathematics)](http://en.wikipedia.org/wiki/Magnitude_(mathematics))     
- [9][Frequency http://en.wikipedia.org/wiki/Frequency](http://en.wikipedia.org/wiki/Frequency)     
-[10][Standard deviation http://en.wikipedia.org/wiki/Standard_deviation](http://en.wikipedia.org/wiki/Standard_deviation)     
-[11][Average http://en.wikipedia.org/wiki/Average](http://en.wikipedia.org/wiki/Average)     
+ <a id="one">[1]<a/> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012    
+ <a id="two">[2]<a/> [Time domain http://en.wikipedia.org/wiki/Time_domain](http://en.wikipedia.org/wiki/Time_domain)         
+ <a id="three">[3]<a/> [Frequency domain http://en.wikipedia.org/wiki/Frequency_domain](http://en.wikipedia.org/wiki/Frequency_domain)        
+ <a id="four">[4]<a/> [Gravitational acceleration http://en.wikipedia.org/wiki/Gravitational_acceleration](http://en.wikipedia.org/wiki/Gravitational_acceleration)   
+ <a id="five">[5]<a/> [Acceleration http://en.wikipedia.org/wiki/Acceleration](http://en.wikipedia.org/wiki/Acceleration)     
+ <a id="six">[6]<a/> [Angular velocity http://en.wikipedia.org/wiki/Angular_velocity](http://en.wikipedia.org/wiki/Angular_velocity)     
+ <a id="seven">[7]<a/> [Jerk http://en.wikipedia.org/wiki/Jerk_(physics)](http://en.wikipedia.org/wiki/Jerk_(physics))    
+ <a id="eight">[8]<a/> [Magnitude http://en.wikipedia.org/wiki/Magnitude_(mathematics)](http://en.wikipedia.org/wiki/Magnitude_(mathematics))     
+ <a id="nine">[9]<a/> [Frequency http://en.wikipedia.org/wiki/Frequency](http://en.wikipedia.org/wiki/Frequency)     
+<a id="ten">[10]<a/> [Standard deviation http://en.wikipedia.org/wiki/Standard_deviation](http://en.wikipedia.org/wiki/Standard_deviation)     
+<a id="eleven">[11]<a/> [Average http://en.wikipedia.org/wiki/Average](http://en.wikipedia.org/wiki/Average)     

@@ -60,11 +60,9 @@ www.smartlab.ws
 ### To Obtain the Tidy Data Set   
 
 **Clone GitHub Repository**   
-https://github.com/rwstapleton/GettingAndCleaningDataCourseProject.git
-`git clone https://github.com/rwstapleton/GettingAndCleaningDataCourseProject.git`       
 
-**Download Data Files From:**   
-   
+- `git clone https://github.com/rwstapleton/GettingAndCleaningDataCourseProject.git`       
+
 **Open R console and Set Working Directory**  
 
 - Use `setwd()` to set working directory to root of the repository  
